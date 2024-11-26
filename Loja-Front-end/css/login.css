@@ -1,0 +1,104 @@
+
+/* Cartão Iniciar Sessão */
+
+.login-contentor{
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  width: 100%;
+}
+
+.login-cartao {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 24px;
+  box-shadow: 0px 2px 3px 0 rgba(126, 123, 123, 0.16);
+  background-color: #fff;
+  border-radius: 5px;
+  width: 30%;
+
+}
+.login-cartao:hover
+{
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.widget-style
+{
+  font-family: 'Times New Roman', Times, serif;
+  color:black;
+}
+
+.widget-style p
+{
+  color: #a04949;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.login-form label {
+  font-size: 1rem;
+}
+
+.login-form input {
+  appearance: none;
+  font-size: 1rem;
+  color: #000;
+  padding: 0px 32px 5px 0;
+  border-radius: 0px;
+  box-shadow: 0 0px 0px 0;
+  transition: all 0.2s ease;
+  border: 0px;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.login-cartao-button {
+  padding: 0 24px;
+  height: 50px;
+  font-size: 18px;
+  margin-top: 8px;
+  color: #fff;
+  width: 100%;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: normal;
+  background-color: #a04949;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Fim do Cartão Iniciar Sessão*/
+
+.registarform {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.registarform input
+{
+  appearance: none;
+  font-size: 1rem;
+  color: #000;
+  border-radius: 0px;
+  box-shadow: 0 0px 0px 0;
+  transition: all 0.2s ease;
+  border: 0px;
+  border-bottom: 2px solid #d3d3d3;
+}
+#mais
+{
+display:none;
+}

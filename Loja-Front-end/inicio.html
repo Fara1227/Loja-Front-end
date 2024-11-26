@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Início</title>
+    <link rel="stylesheet" href="./css/inicio.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500&display=swap"rel="stylesheet"/>
+  </head>
+  <body>
+    <nav class="nav">
+      <!-- Carousel -->
+      <section class="slider-wrapper">
+        <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+        <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+        <ul class="slides-container" id="slides-container">
+          <li class="slide">
+          <img src="img/imgf.jpg" />
+          </li>
+          <li class="slide"><img src="img/beer.2.avif" /></li>
+          <li class="slide"><img src="img/beer.3.avif" /></li>
+        </ul>
+      </section>
+     
+      <ul class="navbar">
+        <li>
+          <img class="logo" src="./img/logo.png" alt="logo" />
+        </li>
+        <li>
+          <a href="./inicio.html"><b>Início</b></a>
+        </li>
+        <li>
+          <a href="./loja.html"><b>Loja</b></a>
+        </li>
+        <li>
+          <a href="./carrinho.html"><b>Carrinho</b></a>
+        </li>
+        <li>
+          <a href="./encomendas.html"><b>Encomendas</b></a>
+        </li>
+        <li>
+          <a href="./login.html"><b>Login / Registo</b></a>
+        </li>
+      </ul>
+    <!-- Script Carousel-->
+    <script>
+      const slidesContainer = document.getElementById("slides-container");
+      const slide = document.querySelector(".slide");
+      const prevButton = document.getElementById("slide-arrow-prev");
+      const nextButton = document.getElementById("slide-arrow-next");
+
+      nextButton.addEventListener("click", () => {
+        const slideWidth = slide.clientWidth;
+        slidesContainer.scrollLeft += slideWidth;
+      });
+
+      prevButton.addEventListener("click", () => {
+        const slideWidth = slide.clientWidth;
+        slidesContainer.scrollLeft -= slideWidth;
+      });
+    </script>
+     <!--Fim -->
+  </body>
+</html>

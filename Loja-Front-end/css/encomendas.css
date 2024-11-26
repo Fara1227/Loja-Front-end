@@ -1,0 +1,52 @@
+body
+{
+background-color: linear-gradient(white,black); 
+background-repeat: no repeat;
+height: 100vh;
+}
+
+.conteudo {
+    margin-top: 60px;
+    display: flex;
+    justify-content:center;
+}
+
+.tabela {
+    width: 80%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+thead {
+    height: 56px;
+    background-color: #a04949
+}
+
+thead tr th div {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 4px;
+}
+
+.setasOrdenacao {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.setasOrdenacao span {
+    transform: scale(0.5, 0.5);
+    cursor: pointer;
+}
+
+tbody tr {
+    height: 32px;
+}
+
+tbody tr td {
+    text-align: center
+}

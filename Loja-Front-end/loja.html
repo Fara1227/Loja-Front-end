@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Loja</title>
+    <link rel="stylesheet" href="css/inicio.css"/>
+    <link rel="stylesheet" href="css/loja.css"/>
+
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500&display=swap"
+      rel="stylesheet"/>
+    <!-- Alerta -->
+    <script>
+      function adicionarAoCarrinho(nomeCerveja){
+        alert(nomeCerveja + ' foi adicionada ao carrinho!')
+      }
+    </script>
+    <!-- Fim -->
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li>
+          <img class="logo" src="./img/logo.png" alt="logo" />
+        </li>
+        <li>
+          <a href="./inicio.html">Início</a>
+        </li>
+        <li>
+          <a href="./loja.html">Loja</a>
+        </li>
+        <li>
+          <a href="./carrinho.html">Carrinho</a>
+        </li>
+        <li>
+          <a href="./encomendas.html">Encomendas</a>
+        </li>
+        <li>
+          <a href="./login.html">Login / Registo</a>
+        </li>
+      </ul>
+    </nav>
+      <h1 style="text-align:center;margin-top:24px;margin-bottom:16px;"><b>Produtos</b></h1>
+    <!-- Cards-->
+    <div class="principal">
+      <div class="card">
+        <img src="img/heineken.jpg" alt="Avatar" style="width:100%">
+        <div class="filho">
+          <h4><b>Heineken</b></h4> 
+          <div class="img">
+            <p>3,95€</p>
+            <button class="botaocarrinho" onclick="adicionarAoCarrinho('Heineken')"> 
+            <img style="width: 35px; height:30px" src="img/carrinhodecompras.png">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/superbock.jpg" alt="Avatar" style="width:100%">
+        <div class="filho">
+          <h4><b>Super Bock</b></h4> 
+          <div class="img">
+            <p>4,20€</p> 
+            <button class="botaocarrinho" onclick="adicionarAoCarrinho('Super Bock')">
+              <img style="width: 35px; height:30px" src="img/carrinhodecompras.png">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/coral.jpg" alt="Avatar" style="width:100%">
+        <div class="filho">
+          <h4><b>Coral</b></h4> 
+          <div class="img">
+            <p>2,90€</p> 
+            <button class="botaocarrinho" onclick="adicionarAoCarrinho('Coral')">
+            <img style="width: 35px; height:30px" src="img/carrinhodecompras.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim dos cards -->
+  </body>
+</html>
